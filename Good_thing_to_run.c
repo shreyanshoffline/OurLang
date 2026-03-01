@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <stdint
+#include <stdint.h>
 
 int main(){
 	uint32_t *x = malloc(1);
