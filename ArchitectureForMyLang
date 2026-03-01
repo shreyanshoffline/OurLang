@@ -1,0 +1,96 @@
+Key:   {
+< x > = variable, data type or module
+equal sign(=) = translation with mylang on right and old lang on left in python and/or c
+{} = comment or to show 
+
+}
+
+import or #include = add <module>
+
+print() or printf() = write: <text or variable or data>
+input() or scanf() = get: 
+if user wants a specific type they can right get: -int or -str or -bool
+
+variables and their types: -------------------------------------------
+
+<name of variable> = value 
+value can be either string, int, float, bool, or nil
+string can be expressed with -str after the variable
+bool is interprated as truth or false which includes nil with the -bool tag
+
+nil = false
+0 - false
+1 - true
+
+if ___ :        = if ___ is true
+    _______           ____
+
+elif _____ : = 
+
+
+# single line comment
+" " = multi line comment
+
+function def is just
+def _____ take _____ , _______ , _______
+
+return ____, _____, and ______
+
+for 10 times
+
+The MyLang Language Architecture
+
+Key: <x> = variable/data | {} = comment 
+
+1. Imports & Setup -----------------------------------------------------------
+
+Python / C Standard	MyLang Translation (=) add <module>
+import <x> / #include <x>	
+from <x> import <y>	
+
+2. Basic I/O (Input/Output) -----------------------------------------------------------
+
+Python / C Standard	MyLang Translation (=)
+print(<x>) / printf(<x>)	= write: <var, or data, or text>
+input() / scanf()	        = get: -tags to specify what 
+input(int) / scanf("%d")	
+input(str) / scanf("%s")	
+3. Data Types & Values -----------------------------------------------------------
+
+Python / C Standard	MyLang Translation (=)
+str (String)	
+int (Integer)	
+bool (Boolean)	
+float (Decimal)	
+None / NULL	
+True / 1	
+False / 0	
+4. Control Flow (Logic) -----------------------------------------------------------
+
+Python / C Standard	MyLang Translation (=)
+if <condition>:	
+elif <condition>:	
+else:	
+while <condition>:	
+for i in range(<x>):	
+break (exit loop)	
+continue (skip iteration)	
+5. Logic Operators -----------------------------------------------------------
+
+Python / C Standard	MyLang Translation (=)
+and / &&	
+or / ||	
+not / !	
+== (is equal)	
+!= (is not equal)	
+6. Functions -----------------------------------------------------------
+
+Python / C Standard	MyLang Translation (=)
+def <name>(<args>):	
+return <x>	
+7. String Power Tools (Custom for MyLang) -----------------------------------------------------------
+
+Python / C Logic	MyLang Translation (=)
+str += " " (Add space)	
+str = str[:-1] (Remove last char)	
+len(str) (Get length)
