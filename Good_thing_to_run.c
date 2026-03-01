@@ -1,11 +1,22 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdint
 
 int main(){
-	int *x = malloc(1);
-	for (int i = 2; i < 100000000000000000; i += 1000000){
-		printf("%i\n", i);
-		x = (int*)realloc(x, i);
+	uint32_t *x = malloc(1);
+	if(x == NULL){
+		return -1
 	}
+	
+	for (uint32_t i = 0; i < 0xFFFFFFFF - 1; i++){
+		printf("allocating x of size: %x bytes\n", i);
+		x = (uint32_t*)realloc(x, i);
+		if(x == NULL){
+			free(x);
+			return -1;
+		}
+	}
+	free(x);
+	printf("bye")
 	return 0;
 }
