@@ -17,6 +17,6 @@ int main(){
 		}
 	}
 	free(x);
-	printf("bye")
+	printf("bye");
 	return 0;
 }
